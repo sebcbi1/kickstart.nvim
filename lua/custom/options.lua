@@ -47,3 +47,9 @@ opt.splitbelow = true -- split horizontal window to the bottom
 opt.swapfile = false
 
 vim.keymap.set('n', '<leader>gs', require('telescope.builtin').git_status, { desc = '[G]it [S]tatus' })
+
+
+vim.keymap.set('n', '<leader>sr', require("spectre").toggle, { desc = "Toggle Spectre" })
+vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Search current word" })
+vim.keymap.set('v', '<leader>sw', require("spectre").open_visual, { desc = "Search current word" })
+vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file" })
