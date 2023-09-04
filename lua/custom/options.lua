@@ -53,3 +53,6 @@ vim.keymap.set('n', '<leader>sr', require("spectre").toggle, { desc = "Toggle Sp
 vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Search current word" })
 vim.keymap.set('v', '<leader>sw', require("spectre").open_visual, { desc = "Search current word" })
 vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file" })
+
+
+
